@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.foto {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.contenido::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-image: url(../img/saludo.png);
+  background-size: 2rem;
+  background-position: top left;
+  background-repeat: no-repeat;
+  width: 5rem;
+  height: 5rem;
+  top: 0rem;
+  left: 15rem;
+}
+
+@media (min-width: 1024px) {
+  .contenido::before {
+    background-size: 3rem;
+    top: -2rem;
+    left: -4rem;
+  }
+}
+
+.myCard::after {
+  content: "";
+  display: block;
+  background-image: url(../img/flecha_abajo.png);
+  background-size: 4rem;
+  /* filter: brightness(0) invert(100%); */
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  width: 4rem;
+  height: 4rem;
+  margin-top: 1rem;
+}
+
+@media (min-width: 640px) {
+  .myCard::after {
+    margin-top: 0;
+    background-size: 3rem;
+    background-image: url(../img/flecha.png);
+    margin-right: 0;
+    display: block;
+    width: 3rem;
+    height: 3rem;
+  }
+}
+@media (min-width: 1024px) {
+  .myCard::after {
+    background-size: 5rem;
+    margin-right: 0;
+    width: 5rem;
+    height: 5rem;
+    display: block;
+  }
+}
+
+.card-image {
+  height: auto;
+  width: 100%;
+}
+
+.card-titulo {
+  font-size: .7rem;
+}
+
+.description {
+  overflow: hidden;
+  position: relative;
+  
+}
+
+.description::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 900ms;
+}
+
+.description::before {
+  transform: translate(-350px) translate(10px);
+}
+
+.description:hover::before{
+  transform: translate(-100px) translate(100px);
+  background-color: black;
+  opacity: .9;
+}
+
+.description-content {
+  position: absolute;
+  z-index: 0;
+  top: -200%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition-property: transform top;
+  transition-duration: 800ms;
+}
+
+.description:hover .description-content{
+  transform: translate(-50%, -50%) scale(1);
+  top: 50%;
+}
+
+.titulo-seccion::after {
+  content: "";
+  display: block;
+  width: calc(100% + 1rem);
+  height: .8rem;
+  margin-top: -1rem;
+}
