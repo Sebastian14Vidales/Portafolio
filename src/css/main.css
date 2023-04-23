@@ -7,7 +7,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
+/* Contenido */
 .contenido::before {
   content: "";
   position: absolute;
@@ -30,6 +30,7 @@
   }
 }
 
+/* Card */
 .myCard::after {
   content: "";
   display: block;
@@ -73,6 +74,7 @@
   font-size: .7rem;
 }
 
+/* Descripcion */
 .description {
   overflow: hidden;
   position: relative;
@@ -112,6 +114,13 @@
 .description:hover .description-content{
   transform: translate(-50%, -50%) scale(1);
   top: 50%;
+}
+
+/* Titulo */
+.titulo-seccion {
+  display: inline-block;
+  text-align: center;
+  
 }
 
 .titulo-seccion::after {
