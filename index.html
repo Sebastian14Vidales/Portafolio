@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
   </head>
-  <body class="">
+  <body>
     
     <section class="bg-principal px-5 container  md:px-10 sm:px-10 pb-12 xl:pb-5 mx-auto shadow-lg">
-      <header class="px-5 sm:px-0 container mx-auto">
+      <header class="container mx-auto">
         <div class="flex justify-between items-center py-10">
           <a href="index.html" class=" text-3xl text-black hover:text-orange-400 decoration-transparent cursor-pointer font-bold font-serif">Sebastian</a>
           <nav class="hidden lg:flex font-bold uppercase">
@@ -29,7 +29,7 @@
       </header>
 
       <div class="grid lg:px-36 sm:grid-cols-2">
-        <div class="flex flex-col justify-center">
+        <div class="texto-inicial flex flex-col justify-center">
           <p class="contenido relative mb-3 text-orange-400 font-bold">Hello, I am <br><span class="text-black text-2xl md:text-4xl uppercase">Sebastian Vidales</span></p>
           <p class="mb-6 text-green-300 text-2xl font-bold">FrontEnd Developer</p>
           <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores architecto vitae sit dolore qui optio corrupti impedit repellendus odit. Delectus ducimus ipsam ab facilis iure, veritatis porro doloribus fuga officia!</p>
@@ -57,30 +57,54 @@
     <section class="bg-oscuro p-10 container lg:px-36 mx-auto">
       <div class="text-center text-white">
         <h1 class="titulo-seccion inline-block after:bg-orange-400 text-center text-white font-bold mb-12 text-4xl">About Me</h1>
-        <div class="grid grid-cols-2">
+        <div class="grid grid-rows-2 md:grid-rows-none md:grid-cols-2">
           <div class="flex flex-col">
             <div class="text-left mb-8">
-              <h1 class="text-3xl titulo-seccion after:bg-indigo-500">Why me?</h1>
+              <h1 class="text-3xl titulo-seccion after:bg-indigo-500">Why me?<span>&#9995;</span></h1>
               <p class="text-justify mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, veniam modi deleniti facilis consequatur maiores enim dicta eveniet molestiae. Commodi voluptatem doloribus error. In quisquam numquam molestias, neque a nisi!</p>
               
             </div>
             <div class="text-left">
-              <h1 class="text-3xl titulo-seccion after:bg-green-700">Skills</h1>
-              <ul class="grid grid-cols-4">
-                <li><img src="src/img/bootstrap.svg" alt="bootstrap"></li>
-                <li><img src="src/img/css3.svg" alt="bootstrap"></li>
-                <li><img src="src/img/gulp.svg" alt="bootstrap"></li>
-                <li><img src="src/img/html5.svg" alt="bootstrap"></li>
-                <li><img src="src/img/js.svg" alt="bootstrap"></li>
-                <li><img src="src/img/mysql.svg" alt="bootstrap"></li> 
-                <li><img src="src/img/sass.svg" alt="bootstrap"></li> 
-                <li><img src="src/img/tailwind.svg" alt="bootstrap"></li> 
+              <h1 class="text-3xl titulo-seccion after:bg-green-700">Skills<span>&#127942;</span></h1>
+              <ul class="grid grid-cols-2 sm:grid-cols-4 mt-4">
+                <li>
+                  <img src="src/img/bootstrap.svg" class="mx-auto" width="40%" alt="bootstrap">
+                  <p class="font-bold font-mono text-center">Bootstrap</p>
+                </li>
+                <li>
+                  <img src="src/img/css3.svg" class="mx-auto" width="40%" alt="css3">
+                  <p class="font-bold font-mono text-center">CSS</p>
+                </li>
+                <li>
+                  <img src="src/img/gulp.svg" class="mx-auto" width="40%" alt="gulp">
+                  <p class="font-bold font-mono text-center">GulpJS</p>
+                </li>
+                <li>
+                  <img src="src/img/html5.svg" class="mx-auto" width="40%" alt="html5">
+                  <p class="font-bold font-mono text-center">HTML5</p>
+                </li>
+                <li>
+                  <img src="src/img/js.svg" class="mx-auto" width="40%" alt="js">
+                  <p class="font-bold font-mono text-center">JavaScript</p>
+                </li>
+                <li>
+                  <img src="src/img/mysql.svg" class="mx-auto" width="40%" alt="mysql">
+                  <p class="font-bold font-mono text-center">MySQL</p>
+                </li> 
+                <li>
+                  <img src="src/img/sass.svg" class="mx-auto" width="40%" alt="sass">
+                  <p class="font-bold font-mono text-center">Sass</p>
+                </li> 
+                <li>
+                  <img src="src/img/tailwind.svg" class="mx-auto" width="40%" alt="tailwind">
+                  <p class="font-bold font-mono text-center">Tailwind</p>
+                </li> 
               </ul>
             </div>
           </div>
 
-          <div class="">
-            <h1 class="text-3xl titulo-seccion after:bg-orange-600">Education</h1>
+          <div class="row-start-1 md:col-start-2 md:">
+            <h1 class="text-3xl titulo-seccion after:bg-orange-600">Education<span>&#127891;</span></h1>
             <div class=""></div>
           </div>
         </div>
