@@ -130,3 +130,24 @@
   height: .8rem;
   margin-top: -1rem;
 }
+
+.educacion {
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.educacion::after {
+  content: '';
+  position: absolute;
+  transition: transform 300ms ease-in-out;
+}
+
+.educacion:hover::after {
+  background-repeat: no-repeat;
+  width: 10rem;
+  height: 10rem;
+  right: -7rem;
+  z-index: -1;
+  transform: rotate(-25deg);
+}

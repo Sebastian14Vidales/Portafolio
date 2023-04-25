@@ -26,6 +26,15 @@ export default {
       'pink-600': '#db2777',
       'green-700': '#15803d',
       'principal': '#fff5eb',
+      'fecha': '#a5c0c9',
+    },
+
+    backgroundImage: {
+      'css': "url('../img/css3.svg')",
+      'html': "url('../img/html5.svg')",
+      'bootstrap': "url('../img/bootstrap.svg')",
+      'js': "url('../img/js.svg')",
+      'birrete': "url('../img/birrete.png')",
     },
     extend: {},
   },
