@@ -34,13 +34,8 @@
 .myCard::after {
   content: "";
   display: block;
-  background-image: url(../img/flecha_abajo.png);
-  background-size: 4rem;
-  /* filter: brightness(0) invert(100%); */
   background-repeat: no-repeat;
   margin: 0 auto;
-  width: 4rem;
-  height: 4rem;
   margin-top: 1rem;
 }
 
