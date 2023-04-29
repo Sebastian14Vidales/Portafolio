@@ -150,3 +150,7 @@ html {
   z-index: -1;
   transform: rotate(-25deg);
 }
+
+.typed-cursor {
+  color: #84d9bc;
+}
