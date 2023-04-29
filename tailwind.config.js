@@ -28,6 +28,7 @@ export default {
       'green-700': '#15803d',
       'principal': '#fff5eb',
       'fecha': '#a5c0c9',
+      'footer': '#e5e7eb',
     },
 
     backgroundImage: {

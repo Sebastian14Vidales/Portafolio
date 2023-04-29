@@ -5,5 +5,12 @@ import './js/menu.js';
 import './js/swiper.js';
 import './js/scrollreveal.js';
 import './js/typed.js';
+import './js/topscroll';
+
+const fechaSpan = document.querySelector('.fecha');
+let fecha = new Date();
+const year = fecha.getFullYear();
+fechaSpan.textContent = year;
+
 
 
