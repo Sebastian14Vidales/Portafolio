@@ -23,6 +23,7 @@ export default {
       'oscuro': '#262626',
       'indigo-200': '#c7d2fe',
       'indigo-500': '#6366f1',
+      'gray-600': '#4b5563',
       'pink-600': '#db2777',
       'green-700': '#15803d',
       'principal': '#fff5eb',

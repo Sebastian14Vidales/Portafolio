@@ -6,39 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
   </head>
-  <body>
+  <body class="body">
     
     <section class="bg-principal px-5 container  md:px-10 sm:px-10 pb-12 xl:pb-5 mx-auto shadow-lg" id="home">
       <header class="header container mx-auto">
         <div class="flex justify-between items-center py-10">
           <a href="index.html" class=" text-3xl text-black hover:text-orange-400 decoration-transparent cursor-pointer font-bold font-serif">Sebastian</a>
           <nav class="hidden lg:flex font-bold uppercase">
-            <a href="#home" class="me-4 text-gray-500 hover:text-orange-400 decoration-transparent">Home</a>
-            <a href="#about" class="me-4 text-gray-500 hover:text-orange-400 decoration-transparent">About me</a>
-            <a href="#projects" class="me-4 text-gray-500 hover:text-orange-400 decoration-transparent">Projects</a>
-            <a href="#testimonials" class="me-4 text-gray-500 hover:text-orange-400 decoration-transparent">Testimonials</a>
-            <a href="#contact" class="text-gray-500 hover:text-orange-400 decoration-transparent">Contact me</a>
+            <a href="#home" class="me-4 hover:text-orange-400 decoration-transparent">Home</a>
+            <a href="#about" class="me-4 hover:text-orange-400 decoration-transparent">About me</a>
+            <a href="#projects" class="me-4 hover:text-orange-400 decoration-transparent">Projects</a>
+            <a href="#testimonials" class="me-4 hover:text-orange-400 decoration-transparent">Testimonials</a>
+            <a href="#contact" class="hover:text-orange-400 decoration-transparent">Contact me</a>
           </nav>
-          <button href="" class="bg-orange-400 hover:bg-orange-600 ease-in duration-200 py-2 px-3 rounded-lg font-bold text-white hidden lg:flex">Download CV</button>
+          <button href="#" class="bg-orange-400 hover:bg-orange-600 ease-in duration-200 py-2 px-3 rounded-lg font-bold text-white hidden lg:flex">Download CV</button>
           <div class="flex flex-col justify-end lg:hidden">
-            <a class="menu-open-btn hover:rotate-180 transition-transform">
+            <a class="cursor-pointer menu-open-btn hover:rotate-180 transition-transform">
               <img src="src/img/menu.svg" alt="Abrir Menu">
             </a>
           </div>
         </div>
       </header> 
 
+      <div class="over bg-gray-600/50 min-h-screen hidden w-full fixed top-0 left-0 right-0 backdrop-blur-sm z-30"></div>
+
       <div class="flex flex-col justify-end lg:hidden">   
         <div class="relative">
-          <nav class="offcanvas-menu fixed bg-green-300 h-screen top-0 right-0 md:w-1/3 shadow-md flex flex-col justify-center items-center translate-x-full font-bold uppercase">
-            <a class="menu-close-btn absolute top-10 right-4" href="#">
+          <nav class="offcanvas-menu fixed bg-principal h-screen top-0 right-0 w-full z-50 md:w-1/3 shadow-md flex flex-col justify-center items-center translate-x-full transition-all duration-300 font-bold uppercase">
+            <a class="menu-item absolute top-10 right-4" href="#">
               <img src="src/img/close.svg" alt="Cerrar Menu">
             </a>
-            <a href="#home" class="p-6 text-gray-500 hover:text-orange-400 decoration-transparent">Home</a>
-            <a href="#about" class="p-6 text-gray-500 hover:text-orange-400 decoration-transparent">About me</a>
-            <a href="#projects" class="p-6 text-gray-500 hover:text-orange-400 decoration-transparent">Projects</a>
-            <a href="#testimonials" class="p-6 text-gray-500 hover:text-orange-400 decoration-transparent">Testimonials</a>
-            <a href="#contact" class="p-6 text-gray-500 hover:text-orange-400 decoration-transparent">Contact me</a>
+            <a href="#home" class="menu-item p-6 text-xl hover:text-orange-400 decoration-transparent">Home</a>
+            <a href="#about" class="menu-item p-6 text-xl hover:text-orange-400 decoration-transparent">About me</a>
+            <a href="#projects" class="menu-item p-6 text-xl hover:text-orange-400 decoration-transparent">Projects</a>
+            <a href="#testimonials" class="menu-item p-6 text-xl hover:text-orange-400 decoration-transparent">Testimonials</a>
+            <a href="#contact" class="menu-item p-6 text-xl hover:text-orange-400 decoration-transparent">Contact me</a>
           </nav>
         </div>
       </div>
