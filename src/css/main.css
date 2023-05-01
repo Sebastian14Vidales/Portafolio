@@ -110,9 +110,22 @@ html {
   transition-duration: 800ms;
 }
 
+.abrir-proyecto {
+  top: -200%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition-property: transform top;
+  transition-duration: 800ms;
+}
+
+.description:hover .abrir-proyecto {
+  transform: translate(-50%, -50%) scale(1);
+  top: 80%;
+}
+
 .description:hover .description-content{
   transform: translate(-50%, -50%) scale(1);
-  top: 50%;
+  top: 40%;
 }
 
 /* Titulo */
