@@ -6,6 +6,12 @@ html {
   scroll-behavior: smooth;
 }
 
+#home {
+  background-image: url(../img/header3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .foto {
   top: 50%;
   left: 50%;
@@ -108,6 +114,7 @@ html {
   transform: translate(-50%, -50%) scale(0);
   transition-property: transform top;
   transition-duration: 800ms;
+  font-size: .6rem;
 }
 
 .abrir-proyecto {

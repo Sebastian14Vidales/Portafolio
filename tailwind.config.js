@@ -18,6 +18,7 @@ export default {
       'black': '#000000',
       'white': '#ffffff',
       'green-300': '#84d9bc',
+      'green-500': '#10b981',
       'orange-400': '#fb923c',
       'orange-600': '#ea580c',
       'oscuro': '#262626',
