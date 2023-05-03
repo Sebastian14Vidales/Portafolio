@@ -7,7 +7,6 @@ import './js/scrollreveal.js';
 import './js/typed.js';
 import './js/topscroll.js';
 import { testimoniales } from './js/testimonials'
-import { info } from 'autoprefixer';
 
 const swiperWrapper = document.querySelector('.swiper-wrapper');
 
@@ -63,6 +62,5 @@ testimoniales.forEach( testimonio => {
     swiperSlider.appendChild(swiperSliderChild);
 
     swiperWrapper.appendChild(swiperSlider);
-    console.log(swiperWrapper);
 });
 
