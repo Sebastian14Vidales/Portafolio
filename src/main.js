@@ -6,6 +6,7 @@ import './js/swiper.js';
 import './js/scrollreveal.js';
 import './js/typed.js';
 import './js/topscroll.js';
+import './js/formulario';
 import { testimoniales } from './js/testimonials'
 
 const swiperWrapper = document.querySelector('.swiper-wrapper');

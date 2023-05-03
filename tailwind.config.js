@@ -30,6 +30,7 @@ export default {
       'principal': '#fff5eb',
       'fecha': '#a5c0c9',
       'footer': '#e5e7eb',
+      'red-600': '#dc2626',
     },
 
     backgroundImage: {
