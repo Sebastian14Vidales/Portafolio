@@ -25,7 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
     btnEnviar.addEventListener('click', registrarUsuario);
   
     function ejecutarInput(e) {
-        console.log(datos);
       const nombre = e.target.name;
       const elementoPadre = e.target.parentElement;
   
@@ -36,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
   
-      if (nombre === 'correo' && !validarCorreo(e.target.value)) {
+      if (nombre === 'email' && !validarCorreo(e.target.value)) {
         insertHTML(`Digite bien el ${nombre}`, elementoPadre);
         datos[nombre] = '';
         habilitarBotonEnviar(datos);
@@ -46,6 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
       datos[nombre] = e.target.value.trim().toLowerCase();
       habilitarBotonEnviar(datos);
       borrarHTML(elementoPadre);
+      console.log(datos);
     }
   
     function insertHTML(mensaje, referencia) {
@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   
     function borrarHTML(referencia) {
-      const alerta = referencia.querySelector('.bg-danger');
+      const alerta = referencia.querySelector('.bg-red-600');
       if (alerta) {
         alerta.remove();
         return;
@@ -71,14 +71,14 @@ document.addEventListener('DOMContentLoaded', () => {
       return validar;
     }
   
-  
     function habilitarBotonEnviar() {
       if (Object.values(datos).includes('')) {
-        btnEnviar.classList.add('bg-green-500'); 
+        btnEnviar.classList.add('bg-green-300'); 
+        btnEnviar.classList.remove('bg-green-700'); 
         btnEnviar.disabled = true;
         return;
       }
-      btnEnviar.classList.remove('bg-green-500'); 
+      btnEnviar.classList.remove('bg-green-300'); 
       btnEnviar.classList.add('bg-green-700'); 
       btnEnviar.disabled = false;
     }
@@ -86,6 +86,30 @@ document.addEventListener('DOMContentLoaded', () => {
     function registrarUsuario(e) {
   
       e.preventDefault();
+
+      const formData = new FormData(formulario);
+      fetch('https://formsubmit.co/api/sendForm', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(Object.fromEntries(formData.entries()))
+      })
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Error en la respuesta de la API');
+        }
+        return response.json();
+      })
+      .then(data => {
+        console.log('Respuesta de la API:', data);
+        // Aquí puedes hacer algo con la respuesta de la API, por ejemplo mostrar un mensaje de éxito al usuario
+      })
+      .catch(error => {
+        console.error('Error al enviar el formulario:', error);
+        // Aquí puedes mostrar un mensaje de error al usuario
+      });
+
       spinner.classList.remove('hidden');
       spinner.classList.add('flex');
   
@@ -98,7 +122,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const exito = document.createElement('P');
         exito.classList.add('bg-green-700', 'text-white', 'text-center', 'rounded', 'mt-3', 'p-2');
         exito.textContent = 'Usuario registrado con éxito';
-        formulario.children[0].appendChild(exito);
+        formulario.children[3].appendChild(exito);
   
         setTimeout(() => {
           exito.remove();
