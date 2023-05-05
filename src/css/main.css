@@ -47,9 +47,34 @@ html {
 }
 
 .foto {
-  top: 50%;
-  left: 50%;
+  top: 30%;
+  left: 40%;
   transform: translate(-50%, -50%);
+}
+
+@media (min-width: 640px) { 
+  .foto {
+    top: 45%;
+    left: 55%;
+  }
+}
+@media (min-width: 768px) { 
+  .foto {
+    top: 35%;
+    left: 50%;
+  }
+}
+@media (min-width: 1280px) { 
+  .foto {
+    top: 10%;
+    left: 50%;
+  }
+}
+@media (min-width: 1536px) { 
+  .foto {
+    top: -35%;
+    left: 35%;
+  }
 }
 /* Contenido */
 .contenido::before {
