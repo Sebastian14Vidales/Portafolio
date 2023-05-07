@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+  </head>
+  <body class="body">
+    
+    <section class="bg-principal px-5 container  md:px-10 sm:px-10 pb-12 xl:pb-5 mx-auto shadow-lg" id="home">
+      <header class="header container mx-auto">
+        <div class="flex justify-between items-center py-10">
+          <a href="index.html" class=" text-3xl text-black hover:text-orange-400 decoration-transparent cursor-pointer font-bold font-serif">Sebastian</a>
+          <nav class="hidden lg:flex font-bold uppercase">
+            <a href="#home" class="me-4 menu decoration-transparent">Home</a>
+            <a href="#about" class="me-4 menu decoration-transparent">About me</a>
+            <a href="#projects" class="me-4 menu decoration-transparent">Projects</a>
+            <a href="#testimonials" class="me-4 menu decoration-transparent">Testimonials</a>
+            <a href="#contact" class="menu decoration-transparent">Contact me</a>
+          </nav>
+          <a href="src/assets/SebastianVidalesCV.pdf" download="Sebastian Vidales CV" class="download cursor-pointer bg-green-300 hover:bg-green-500 ease-in duration-200 py-2 px-3 rounded-lg font-bold text-black hover:text-white hidden lg:flex"> Download CV</a>
+          <div class="flex flex-col justify-end lg:hidden">
+            <a class="cursor-pointer menu-open-btn hover:rotate-180 transition-transform">
+              <img src="src/img/menu.svg" alt="Abrir Menu">
+            </a>
+          </div>
+        </div>
+      </header> 
+
+      <div class="over bg-gray-600/50 min-h-screen hidden w-full fixed top-0 left-0 right-0 backdrop-blur-sm z-30"></div>
+
+      <div class="flex flex-col justify-end lg:hidden">   
+        <div class="relative">
+          <nav class="offcanvas-menu fixed bg-principal h-screen top-0 right-0 w-2/3 z-50 md:w-1/3 shadow-md flex flex-col justify-center items-center translate-x-full transition-all duration-300 font-bold uppercase">
+            <a class="menu-item absolute top-10 right-4" href="#">
+              <img src="src/img/close.svg" alt="Cerrar Menu">
+            </a>
+            <a href="#home" class="menu-item p-6 text-xl hover:text-orange-400 decoration-transparent">Home</a>
+            <a href="#about" class="menu-item p-6 text-xl hover:text-orange-400 decoration-transparent">About me</a>
+            <a href="#projects" class="menu-item p-6 text-xl hover:text-orange-400 decoration-transparent">Projects</a>
+            <a href="#testimonials" class="menu-item p-6 text-xl hover:text-orange-400 decoration-transparent">Testimonials</a>
+            <a href="#contact" class="menu-item p-6 text-xl hover:text-orange-400 decoration-transparent">Contact me</a>
+          </nav>
+        </div>
+      </div>
+
+      <div class="grid lg:p-20 xl:p-36 grid-rows-2 sm:grid-rows-none sm:grid-cols-2">
+        <div class="texto-inicial flex flex-col justify-center">
+          <p class="contenido relative mb-3 text-orange-400 font-bold">Hello, I am <br><span class="text-black text-2xl md:text-4xl uppercase">Sebastian Vidales</span></p>
+          <h1><span class="mb-6 text-green-300 text-2xl font-bold typed"></span></h1>  
+          <p class="mt-3">A passionate Systems Engineer and Front-End Web Developer from Florencia, Colombia having an experience about creating applications Web with JavaScript | HTML | CSS3 and some other libraries and frameworks CSS. Currently, I'm learning about React JS.</p>
+
+          <div class="mt-10 flex items-center">
+            <a href="#hireme" class="text-white font-bold bg-orange-400 hover:bg-orange-600 ease-in duration-200 px-5 lg:px-10 py-3 rounded-lg">Hire me</a>
+            <a href="src/assets/SebastianVidalesCV.pdf" download="Sebastian Vidales CV" class="download font-bold px-5 lg:px-10">Download CV 
+              <span class="inline-flex items-center ml-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="orange-400" class="fill-black w-5 h-5">
+                  <path d="M10.75 2.75a.75.75 0 00-1.5 0v8.614L6.295 8.235a.75.75 0 10-1.09 1.03l4.25 4.5a.75.75 0 001.09 0l4.25-4.5a.75.75 0 00-1.09-1.03l-2.955 3.129V2.75z" />
+                  <path d="M3.5 12.75a.75.75 0 00-1.5 0v2.5A2.75 2.75 0 004.75 18h10.5A2.75 2.75 0 0018 15.25v-2.5a.75.75 0 00-1.5 0v2.5c0 .69-.56 1.25-1.25 1.25H4.75c-.69 0-1.25-.56-1.25-1.25v-2.5z" />
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="flex relative flex-col sm:flex-row justify-center items-center row-start-1 sm:col-start-2">
+          <img class="absolute w-full rounded-full foto" src="src/img/foto-2.png" alt="Foto perfil">         
+        </div>
+      </div>
+    </section>
+    <section id="about" class="bg-oscuro p-10 container lg:px-36 mx-auto">
+      <div class="text-center text-white">
+        <h1 class="titulo-seccion inline-block after:bg-orange-400 text-center text-white font-bold mb-12 text-4xl">About Me</h1>
+        <div class="grid sm:flex sm:flex-col row-start-1 row-end-2">
+          <div class="grid sm:grid-cols-2 gap-6 sm:mb-10">
+            <div class="animacion-whyme text-left mb-8">
+              <h1 id="hireme" class="text-3xl titulo-seccion after:bg-indigo-500">Why me?<span>&#9995;</span></h1>
+              <p class="text-justify mt-4">I am a programming Front-End with +1 year of experience at technologies
+                and software tools. I studied at University of Amazonia and I am a Systems
+                Engineer. My professional and personal training allows to have the ability
+                to solve problems and adapt to any work environment. I love learning and
+                be better every day in what I do.</p>
+              
+            </div>
+            <div class="animacion-skills overflow-hidden text-left">
+              <h1 class="text-3xl titulo-seccion after:bg-green-700">Skills<span>&#127942;</span></h1>
+              <ul class="grid grid-cols-2 sm:grid-cols-4 mt-4">
+                <li>
+                  <img src="src/img/bootstrap.svg" class="mx-auto" width="40%" alt="bootstrap">
+                  <p class="font-bold font-mono text-center">Bootstrap</p>
+                </li>
+                <li>
+                  <img src="src/img/css3.svg" class="mx-auto" width="40%" alt="css3">
+                  <p class="font-bold font-mono text-center">CSS</p>
+                </li>
+                <li>
+                  <img src="src/img/gulp.svg" class="mx-auto" width="40%" alt="gulp">
+                  <p class="font-bold font-mono text-center">GulpJS</p>
+                </li>
+                <li>
+                  <img src="src/img/html5.svg" class="mx-auto" width="40%" alt="html5">
+                  <p class="font-bold font-mono text-center">HTML5</p>
+                </li>
+                <li>
+                  <img src="src/img/js.svg" class="mx-auto" width="40%" alt="js">
+                  <p class="font-bold font-mono text-center">JavaScript</p>
+                </li>
+                <li>
+                  <img src="src/img/mysql.svg" class="mx-auto" width="40%" alt="mysql">
+                  <p class="font-bold font-mono text-center">MySQL</p>
+                </li> 
+                <li>
+                  <img src="src/img/sass.svg" class="mx-auto" width="40%" alt="sass">
+                  <p class="font-bold font-mono text-center">Sass</p>
+                </li> 
+                <li>
+                  <img src="src/img/tailwind.svg" class="mx-auto" width="40%" alt="tailwind">
+                  <p class="font-bold font-mono text-center">Tailwind</p>
+                </li> 
+              </ul>
+            </div>
+          </div>
+
+          <div class="text-left sm:text-center my-12 sm:my-0">
+            <h1 class="animacion-educacion-left overflow-hidden text-3xl titulo-seccion after:bg-orange-600 mb-6">Education<span>&#127891;</span></h1>
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div class="animacion-educacion-left educacion hover:after:bg-birrete hover:after:-top-6 hover:after:bg-auto p-6 text-left border rounded hover:bg-white hover:text-black hover:scale-105 transition-all ">
+                <h1 class="font-bold">Ingeniería de Sistemas</h1>
+                <p class="text-xs font-mono text-fecha">February-2012 - September-2019</p>
+                <p class="mt-2 text-xs sm:text-base">I did my college career at University of Amazonia where I acquired values
+                  and fundamental knowledge about systems building in our environment.</p>
+              </div>
+              <div class="animacion-educacion-right educacion hover:after:bg-html p-6 hover:after:-top-6  hover:after:bg-auto text-left border rounded hover:bg-white hover:text-black hover:scale-105 transition-all ">
+                <h1 class="font-bold">Curso Desarrollo Web Completo con HTML5, CSS3, JS AJAX PHP y MySQL</h1>
+                <p class="text-xs font-mono text-fecha">February-2012 - September-2019</p>
+                <p class="mt-2 text-xs sm:text-base">In this course I learned to create projects with HTML, CSS and JavaScript.
+                  Also, I learned about MySQL and a little PHP. My dream to be software developer started here.</p>
+              </div>
+              <div class="animacion-educacion-left educacion hover:after:bg-css p-6 hover:after:-top-6 hover:after:bg-auto text-left border rounded hover:bg-white hover:text-black hover:scale-105 transition-all ">
+                <h1 class="font-bold">Curso CSS La Guía Completa - Flexbox, CSS Grid, SASS</h1>
+                <p class="text-xs font-mono text-fecha">February-2012 - September-2019</p>
+                <p class="mt-2 text-xs sm:text-base">In this course learned to dominate CSS, SASS, Grid, Flexbox, BEM, Gulp
+                  and mobile first. I performed projects about designs web responsive.</p>
+              </div>
+              <div class="animacion-educacion-right educacion hover:after:bg-bootstrap p-6 hover:after:-top-6 hover:after:bg-auto text-left border rounded hover:bg-white hover:text-black hover:scale-105 transition-all ">
+                <h1 class="font-bold">Curso Bootstrap 5 y SASS - La Guía Completa</h1>
+                <p class="text-xs font-mono text-fecha">February-2012 - September-2019</p>
+                <p class="mt-2 text-xs sm:text-base">The Bootstrap course I learned about main fundamentals of a frameworkCSS.
+                  I did responsive projects using CSS classes.</p>
+              </div>
+              <div class="animacion-educacion-left educacion hover:after:bg-js block sm:hidden p-6 hover:after:-top-6 hover:after:bg-auto text-left border rounded hover:bg-white hover:text-black hover:scale-105 transition-all ">
+                <h1 class="font-bold">Curos JavaScript Moderno - La Guía Definitiva</h1>
+                <p class="text-xs font-mono text-fecha">March-2023 - Actually</p>
+                <p class="mt-2 text-xs sm:text-base">Currently I am finishing the JavaScript course. However, I have learned
+                  topics such as REST APIS, Asyn/Await, POO, Promises, Arrow Functions, among others.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <main id="projects" class="p-4 container pt-16 lg:pt-20 lg:pb-10 px-10  mx-auto bg-principal shadow-lg">
+      <div class="text-center">
+        <h1 class="titulo-seccion inline-block after:bg-green-300 text-center text-black font-bold mb-6 md:mb-12 text-4xl">Portfolio</h1>
+      </div>
+      <div class="grid gap-4 xl:grid-cols-12 xl:row-2 lg:grid-cols-11 lg:grid-rows-2 sm:grid-cols-12 sm:grid-rows-3">
+          <div class="flex p-4 flex-col justify-center text-center md:text-left xl:row-start-1 xl:row-end-3 lg:col-start-1 lg:col-end-4 lg:row-start-1 lg:row-end-4 myCard md:py-6 sm:col-start-1 sm:col-end-7">
+            <h1 class="text-black font-sans text-2xl lg:text-3xl xl:text-4xl">My Recent <br><span>Works &#128170; &#128293; &#127912;</span></h1>
+            <p class="text-sm md:text-lg text-black mt-6">I design and developed modern web solutions with a professional design using lastest trends</p>
+          </div>
+
+          <div class="shadow-black drop-shadow-sm rounded-xl hover:scale-105 transition-all card xl:col-span-3 lg:col-span-4 sm:col-start-7 sm:col-end-13">
+            <div class="description">
+              <img src="src/img/alquiler.png" alt="Placeholder image" class="sm:h-56 md:h-64 lg:h-auto xl:h-48 2xl:h-auto object-cover card-image">
+              <p class="description-content md:text-xs text-white text-justify font-montserrat">The Finca Raiz project look for apartments or houses using search filters.
+                This project was done with Bootstrap, SASS y JS.</p>
+              <a target="_blank" href="https://alquilar-fincaraiz.netlify.app" class="abrir-proyecto absolute z-0 bg-orange-400 rounded-lg block px-4 py-1 text-xs text-white">Open Project</a>
+            </div>
+            <div class="bg-white p-3">
+              <div class="flex justify-between">
+                <p class="card-titulo font-bold text-orange-400">Title: <span class="text-black">Finca Raíz</span> </p>
+                <p class="card-titulo font-bold text-orange-400">Published on: <span class="text-black">03/29/2023</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="shadow-black drop-shadow-sm rounded-xl hover:scale-105 transition-all card xl:col-start-7 xl:col-end-10 xl:row-start-1 xl:row-end-2 lg:col-span-4 sm:col-start-7 sm:col-end-13 sm:row-start-3 sm:row-end-4">
+            <div class="description">
+              <img src="src/img/gasto.png" alt="Placeholder image" class="sm:h-56 md:h-64 lg:h-auto xl:h-48 2xl:h-auto object-cover lg:bg-center card-image">
+              <p class="description-content md:text-xs text-white text-justify font-montserrat">This project simulate some weekly expenses of one person. You can insert
+                values and a description. Also, it can generate alerts if your money is low.</p>
+              <a target="_blank" href="https://presupuesto-simulate.netlify.app" class="abrir-proyecto absolute z-0 bg-orange-400 rounded-lg block px-4 py-1 text-xs text-white">Open Project</a>
+            </div>
+            <div class="bg-white p-3">
+              <div class="flex justify-between">
+                <p class="card-titulo font-bold text-orange-400">Title: <span class="text-black">Simulación</span> </p>
+                <p class="card-titulo font-bold text-orange-400">Published on: <span class="text-black">04/18/2023</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="shadow-black drop-shadow-sm rounded-xl hover:scale-105 transition-all card xl:col-start-10 xl:col-end-13 xl:row-start-1 xl:row-end-2  lg:col-span-4 sm:col-start-1 sm:col-end-13 sm:row-start-2 sm:row-end-3">
+            <div class="description">
+              <img src="src/img/guitar.png" alt="Placeholder image" class="sm:h-56 md:h-64 lg:h-auto xl:h-48 2xl:h-auto object-cover card-image">
+              <p class="description-content md:text-xs text-white text-justify font-montserrat">The GuitarLA project is a project where you can visualize some products
+                such as guitars and their characteristics. It was done with Bootstrap.</p>
+              <a target="_blank" href="https://guitarherosite.netlify.app" class="abrir-proyecto absolute z-0 bg-orange-400 rounded-lg block px-4 py-1 text-xs text-white">Open Project</a>
+            </div>
+            <div class="bg-white p-3">
+              <div class="flex justify-between">
+                <p class="card-titulo font-bold text-orange-400">Title: <span class="text-black">GuitarLA</span> </p>
+                <p class="card-titulo font-bold text-orange-400">Published on: <span class="text-black">03/01/2023</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="shadow-black drop-shadow-sm rounded-xl hover:scale-105 transition-all card xl:col-start-4 xl:col-end-7 xl:row-start-2 xl:row-end-3  lg:col-span-4 sm:col-start-1 sm:col-end-7 sm:row-start-3 sm:row-end-4">
+            <div class="description">
+              <img src="src/img/podcast.png" alt="Placeholder image" class="sm:h-56 md:h-64 lg:h-auto xl:h-48 2xl:h-auto object-cover card-image">
+              <p class="description-content md:text-xs text-white text-justify font-montserrat">This project allows to visualize information about plans and statistics.
+                The project was done with HTML and CSS.</p>
+              <a target="_blank" href="https://podcastflorencia.netlify.app/" class="abrir-proyecto absolute z-0 bg-orange-400 rounded-lg block px-4 py-1 text-xs text-white">Open Project</a>
+            </div>
+            <div class="bg-white p-3">
+              <div class="flex justify-between">
+                <p class="card-titulo font-bold text-orange-400">Title: <span class="text-black">Podcast FM</span> </p>
+                <p class="card-titulo font-bold text-orange-400">Published on: <span class="text-black">02/24/2023</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="shadow-black drop-shadow-sm rounded-xl hover:scale-105 transition-all card xl:col-start-7 xl:col-end-10 xl:row-start-2 xl:row-end-3 lg:col-span-4 sm:col-start-1 sm:col-end-7">
+            <div class="description">
+              <img src="src/img/formulario.png" alt="Placeholder image" class="sm:h-56 md:h-64 lg:h-auto xl:h-48 2xl:h-auto object-cover card-image">
+              <p class="description-content md:text-xs text-white text-justify font-montserrat">The form is a project where it validate fields using regular expressions
+                with JavaScript. Besides, this project was done with Bootstrap.</p>
+              <a target="_blank" href="https://validatedform.netlify.app/" class="abrir-proyecto absolute z-0 bg-orange-400 rounded-lg block px-4 py-1 text-xs text-white">Open Project</a>
+            </div>
+            <div class="bg-white p-3">
+              <div class="flex justify-between">
+                <p class="card-titulo font-bold text-orange-400">Title: <span class="text-black">Formulario</span> </p>
+                <p class="card-titulo font-bold text-orange-400">Published on: <span class="text-black">03/20/2023</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="shadow-black drop-shadow-sm rounded-xl hover:scale-105 transition-all card xl:col-start-10 xl:col-end-13 xl:row-start-2 xl:row-end-3 lg:col-span-4 sm:col-start-7 sm:col-end-13">
+            <div class="description">
+              <img src="src/img/udemy.png" alt="Placeholder image" class="sm:h-56 md:h-64 lg:h-auto xl:h-48 2xl:h-auto object-cover card-image">
+              <p class="description-content md:text-xs text-white text-justify font-montserrat">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum cupiditate esse in inventore fuga eos obcaecati necessitatibus dolorum illo aspernatur.</p>
+              <a target="_blank" href="https://udemyoriginalpage.netlify.app" class="abrir-proyecto absolute z-0 bg-orange-400 rounded-lg block px-4 py-1 text-xs text-white">Open Project</a>
+            </div>
+            <div class="bg-white p-3">
+              <div class="flex justify-between">
+                <p class="card-titulo font-bold text-orange-400">Title: <span class="text-black">Udemy clon</span> </p>
+                <p class="card-titulo font-bold text-orange-400">Published on: <span class="text-black">03/30/2023</span></p>
+              </div>
+            </div>
+          </div>
+      </div>
+    </main>
+
+    <section id="testimonials" class="bg-oscuro p-10 lg:px-36 container mx-auto">
+      <div class="text-center">
+        <h1 class="titulo-seccion inline-block after:bg-orange-400 text-center text-white font-bold text-4xl">Testimonials</h1>
+      </div>
+      
+      <div class="swiper w-full h-full text-white mySwiper">
+        <div class="swiper-wrapper mb-6">
+        </div>
+        <div class="swiper-button-next after:text-white after:hidden after:sm:flex"></div>
+        <div class="swiper-button-prev after:text-white after:hidden after:sm:flex"></div>
+        <div class="swiper-pagination "></div>
+      </div>
+
+    </section>
+
+    <section id="contact" class="bg-principal p-10 container mx-auto">
+      <div class="text-center">
+        <h1 class="titulo-seccion inline-block after:bg-green-300 text-center text-black font-bold mb-12 text-4xl">Contact Me</h1>
+      </div>
+      <div class="flex justify-center">
+        <form id="contact-form" class="w-full max-w-lg" action="https://formsubmit.co/a84959d7a15dc8b6ceeaa091852b10c5" method="POST">
+          <div class="mb-4">
+            <label class="block text-gray-700 font-bold mb-2" for="name">Name</label>
+            <input class="shadow appearance-none rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              id="name" type="text" name="name" placeholder="Your Name">
+          </div>
+          <div class="mb-4">
+            <label class="block text-gray-700 font-bold mb-2" for="subject">Subject</label>
+            <input class="shadow appearance-none rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              id="subject" type="text" name="subject" placeholder="Subject">
+          </div>
+          <div class="mb-4">
+            <label class="block text-gray-700 font-bold mb-2" for="email">Email Address</label>
+            <input class="shadow appearance-none rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              id="email" type="email" name="email" placeholder="example@example.com">
+          </div>
+          <div class="mb-4">
+            <label class="block text-gray-700 font-bold mb-2" for="message">Message</label>
+            <textarea class="shadow appearance-none rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              id="message" name="message" rows="5" placeholder="Write your message here"></textarea>
+          </div>
+          <div id="spinner" class="hidden justify-center mb-4">
+            <svg  aria-hidden="true" class=" w-8 h-8 mr-2 text-footer animate-spin dark:text-gray-600 fill-indigo-500" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="currentColor"/>
+              <path d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z" fill="currentFill"/>
+          </svg>
+          </div>
+         
+          <div class="sm:flex items-center justify-center">
+            <button id="boton-submit" class="bg-green-300 block w-full sm:inline-block sm:w-auto transition-all text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" 
+              type="submit" disabled>Send  
+              <svg class="inline-block h-4 w-4 text-white"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  
+                <path stroke="none" d="M0 0h24v24H0z"/>  
+                <line x1="10" y1="14" x2="21" y2="3" />  
+                <path d="M21 3L14.5 21a.55 .55 0 0 1 -1 0L10 14L3 10.5a.55 .55 0 0 1 0 -1L21 3" />
+              </svg>
+            </button>
+          </div>
+
+          <input type="hidden" name="_next" value="https://vidalescodex.netlify.app/">
+          <input type="hidden" name="_captcha" value="false">
+
+        </form>
+      </div>
+    </section>
+
+    <a class="w-8 sm:w-10 cursor-pointer hidden bg-green-300 rounded-lg topscroll fixed bottom-5 right-5 z-50 border-none outline-none" title="Ir a arriba">
+      <img src="src/img/top.png" alt="Flecha arriba" style="filter: brightness(0) invert(100%);">
+    </a>
+
+    <footer class="bg-principal px-10 pb-6 container mx-auto">
+      <div class="border-t border-footer text-center">
+        <div class="flex flex-col sm:flex-row pt-2 justify-between items-center">
+          <p class="text-gray-600 text-sm font-bold">Copyright © <span class="fecha"></span> - Sebastian Vidales Claros </p>
+          <div class="flex mb-2 sm:mb-0 -order-1 sm:order-1">
+            <a target="_blank" href="https://github.com/Sebastian14Vidales"><img class="w-10" src="src/img/github.svg" alt="github"></a>
+            <a target="_blank" href="https://www.linkedin.com/in/sebastian-vidales-claros-063b53181/"><img class="w-10" src="src/img/linkedin.svg" alt="linkedin"></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script type="module" src="src/main.js"></script>
+    
+  </body>
+</html>
