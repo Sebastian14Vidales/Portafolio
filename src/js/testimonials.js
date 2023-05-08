@@ -1,5 +1,6 @@
-import imagenYilver from '../img/yilver.jpg'
-import imagenJulian from '../img/julian.jpg'
+import imagenYilver from '../img/yilver.avif'
+import imagenJulian from '../img/julian.avif'
+import imagenNatalia from '../img/natalia.avif'
 
 const testimoniales = [
     {
@@ -16,10 +17,10 @@ const testimoniales = [
     },
     
     {
-        testimonio: '"Sebastian is a very responsible and proactive person who is always open for challenges, having the attitudes that a company needs to move forward. From the technical side, he has developed his skills on Frontend development and is involving in some interesting projects."',
-        foto: imagenYilver,
-        nombre: 'Yilver Molina',
-        cargo: 'Software Designer, Tech Lead at Globant'
+        testimonio: '"Sebastian is a very nice guy, responsible and dedicated to his projects. His skills are in Front end technologies, he is always ready for new challenges and he likes to learn something new every day that adds value to his knowledge."',
+        foto: imagenNatalia,
+        nombre: 'Natalia Hurtatis',
+        cargo: 'QA Analyst at Bizagi'
     },
     {
         testimonio: '"Sebastian is a very responsible and proactive person who is always open for challenges, having the attitudes that a company needs to move forward. From the technical side, he has developed his skills on Frontend development and is involving in some interesting projects."',
