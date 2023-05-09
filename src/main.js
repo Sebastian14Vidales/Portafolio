@@ -8,6 +8,8 @@ import './js/typed.js';
 import './js/topscroll.js';
 import './js/formulario.js';
 import './js/testimonials.js';
+import './js/course.js';
+import './js/skills.js';
 import './js/downloadPdf.js';
 
 const fechaSpan = document.querySelector('.fecha');
