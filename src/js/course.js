@@ -35,7 +35,7 @@ cursos.forEach(curso => {
     const skills = document.querySelector('.curso');
 
     const div = document.createElement('DIV');
-    div.classList.add('animacion-educacion-left', 'educacion', `${curso.imagen}`, 'hover:after:-top-6', 'hover:after:bg-auto', 'p-6', 'text-left', 'border', 'rounded', 'hover:bg-white', 'hover:text-black', 'hover:scale-105', 'transition-all');
+    div.classList.add('educacion', `${curso.imagen}`, 'hover:after:-top-6', 'hover:after:bg-auto', 'p-6', 'text-left', 'border', 'rounded', 'hover:bg-white', 'hover:text-black', 'hover:scale-105', 'transition-all');
     const title = document.createElement('P');
     title.classList.add('font-bold');
     title.textContent = `${curso.titulo}`; 
@@ -45,10 +45,17 @@ cursos.forEach(curso => {
     const content = document.createElement('P');
     content.classList.add('mt-2', 'text-xs', 'sm:text-base');
     content.textContent = `${curso.contenido}`;
+
     if(curso.imagen.includes('hover:after:bg-js')) {
         div.classList.add('block', 'sm:hidden');
     } else {
         div.classList.remove('block', 'sm:hidden');
+    }
+
+    if(curso.imagen.includes('hover:after:bg-birrete') || curso.imagen.includes('hover:after:bg-css') || curso.imagen.includes('hover:after:bg-js')) {
+        div.classList.add('animacion-educacion-left');
+    } else {
+        div.classList.add('animacion-educacion-right');
     }
 
     div.appendChild(title);
