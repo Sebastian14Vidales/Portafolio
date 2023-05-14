@@ -25,7 +25,7 @@ const cursos = [
     },
     {
         imagen: 'hover:after:bg-js',
-        titulo: 'Curos JavaScript Moderno - La Guía Definitiva',
+        titulo: 'Curso JavaScript Moderno - La Guía Definitiva',
         fecha: 'March-2023 - Currently',
         contenido: 'Currently I am finishing the JavaScript course. However, I have learned topics such as REST APIS, Asyn/Await, POO, Promises, Arrow Functions, among others.'
     },

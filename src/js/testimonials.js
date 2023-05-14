@@ -1,6 +1,6 @@
-import imagenYilver from '../img/yilver.avif'
-import imagenJulian from '../img/julian.avif'
-import imagenNatalia from '../img/natalia.avif'
+import imagenYilver from '../img/yilver.webp'
+import imagenJulian from '../img/julian.webp'
+import imagenNatalia from '../img/natalia.webp'
 
 const testimoniales = [
     {
@@ -10,7 +10,7 @@ const testimoniales = [
         cargo: 'Software Designer, Tech Lead at Globant'
     },
     {
-        testimonio: '"Sebastian is a very responsible and proactive person who is always open for challenges, having the attitudes that a company needs to move forward. From the technical side, he has developed his skills on Frontend development and is involving in some interesting projects."',
+        testimonio: '"Sebastian demonstrated a deep understanding of the latest technologies and trends in frontend development. His creative approach and attention to detail were reflected in the quality of the design and usability of the interface he showcased in his portfolio."',
         foto: imagenJulian,
         nombre: 'Julian Mora',
         cargo: 'Front-End Developer at Crehana'
@@ -21,12 +21,6 @@ const testimoniales = [
         foto: imagenNatalia,
         nombre: 'Natalia Hurtatis',
         cargo: 'QA Analyst at Bizagi'
-    },
-    {
-        testimonio: '"Sebastian is a very responsible and proactive person who is always open for challenges, having the attitudes that a company needs to move forward. From the technical side, he has developed his skills on Frontend development and is involving in some interesting projects."',
-        foto: imagenJulian,
-        nombre: 'Julian Mora',
-        cargo: 'Front-End Developer at Crehana'
     },
 ];
 
