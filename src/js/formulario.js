@@ -84,31 +84,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   
     function registrarUsuario(e) {
-  
-    //   e.preventDefault();
-
-    //   const formData = new FormData(formulario);
-    //   fetch('https://formsubmit.co/api/sendForm', {
-    //     method: 'POST',
-    //     headers: {
-    //       'Content-Type': 'application/json'
-    //     },
-    //     body: JSON.stringify(Object.fromEntries(formData.entries()))
-    //   })
-    //   .then(response => {
-    //     if (!response.ok) {
-    //       throw new Error('Error en la respuesta de la API');
-    //     }
-    //     return response.json();
-    //   })
-    //   .then(data => {
-    //     console.log('Respuesta de la API:', data);
-    //     // Aquí puedes hacer algo con la respuesta de la API, por ejemplo mostrar un mensaje de éxito al usuario
-    //   })
-    //   .catch(error => {
-    //     console.error('Error al enviar el formulario:', error);
-    //     // Aquí puedes mostrar un mensaje de error al usuario
-    //   });
 
       spinner.classList.remove('hidden');
       spinner.classList.add('flex');
