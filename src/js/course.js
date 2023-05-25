@@ -26,8 +26,14 @@ const cursos = [
     {
         imagen: 'hover:after:bg-js',
         titulo: 'Curso JavaScript Moderno - La Guía Definitiva',
-        fecha: 'March-2023 - Currently',
-        contenido: 'Currently I am finishing the JavaScript course. However, I have learned topics such as REST APIS, Asyn/Await, POO, Promises, Arrow Functions, among others.'
+        fecha: 'March-2023 - May-2023',
+        contenido: 'I did the JavaScript course. However, I learned topics such as REST APIS, Asyn/Await, POO, Promises, Arrow Functions, among others.'
+    },
+    {
+        imagen: 'hover:after:bg-react',
+        titulo: 'Curso React - La Guía Completa: Hooks Context Redux MERN',
+        fecha: 'May-2023 - Currently',
+        contenido: 'Currently I am doing the React course. In this moment, I am learning to use Hooks, Next.js, Redux, Vite and TailwindCSS.'
     },
 ];
 
@@ -45,12 +51,6 @@ cursos.forEach(curso => {
     const content = document.createElement('P');
     content.classList.add('mt-2', 'text-xs', 'sm:text-base');
     content.textContent = `${curso.contenido}`;
-
-    if(curso.imagen.includes('hover:after:bg-js')) {
-        div.classList.add('block', 'sm:hidden');
-    } else {
-        div.classList.remove('block', 'sm:hidden');
-    }
 
     if(curso.imagen.includes('hover:after:bg-birrete') || curso.imagen.includes('hover:after:bg-css') || curso.imagen.includes('hover:after:bg-js')) {
         div.classList.add('animacion-educacion-left');

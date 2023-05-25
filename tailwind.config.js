@@ -39,6 +39,7 @@ export default {
       'bootstrap': "url('../img/bootstrap.svg')",
       'js': "url('../img/js.svg')",
       'birrete': "url('../img/birrete.png')",
+      'react': "url('../img/react.svg')",
     },
     extend: {},
   },
