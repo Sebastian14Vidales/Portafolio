@@ -1,24 +1,32 @@
 import imagenBootstrap from '../img/bootstrap.svg';
 import imagenCSS from '../img/css3.svg';
-import imagenGulp from '../img/gulp.svg';
+import imagenGit from '../img/git.svg';
+import imagenGitHub from '../img/github.svg';
 import imagenHTML from '../img/html5.svg';
 import imagenJS from '../img/js.svg';
 import imagenMySQL from '../img/mysql.svg';
 import imagenSass from '../img/sass.svg';
 import imagenTailwind from '../img/tailwind.svg';
+import imagenReact from '../img/react.svg';
+import imagenNpm from '../img/npm.svg';
+import imagenVite from '../img/vitejs.svg';
 
 document.addEventListener('DOMContentLoaded', {
     
 })
 const skills = [
     { imagen: imagenBootstrap, nombre: 'Bootstrap' },
-    { imagen: imagenCSS, nombre: 'CSS' },
-    { imagen: imagenGulp, nombre: 'GulpJS' },
-    { imagen: imagenHTML, nombre: 'HTML5' },
-    { imagen: imagenJS, nombre: 'JavaScript' },
-    { imagen: imagenMySQL, nombre: 'MySQL' },
-    { imagen: imagenSass, nombre: 'Sass' },
     { imagen: imagenTailwind, nombre: 'Tailwind' },
+    { imagen: imagenCSS, nombre: 'CSS' },
+    { imagen: imagenSass, nombre: 'Sass' },
+    { imagen: imagenHTML, nombre: 'HTML5' },
+    { imagen: imagenNpm, nombre: 'Npm' },
+    { imagen: imagenGit, nombre: 'Git' },
+    { imagen: imagenGitHub, nombre: 'GitHub' },
+    { imagen: imagenJS, nombre: 'JavaScript' },
+    { imagen: imagenReact, nombre: 'React' },
+    { imagen: imagenMySQL, nombre: 'MySQL' }, 
+    { imagen: imagenVite, nombre: 'ViteJS' }, 
 ];
 
 skills.forEach(skill => {
