@@ -1,5 +1,5 @@
 import ImagenProjectOne from '../img/alquiler.webp';
-import ImagenProjectTwo from '../img/gasto.webp';
+import ImagenProjectTwo from '../img/control.webp';
 import ImagenProjectThree from '../img/citasMascotas.webp';
 import ImagenProjectFour from '../img/pets.webp';
 import ImagenProjectFive from '../img/formulario.webp';
@@ -10,19 +10,19 @@ const projects = [
         imagen: ImagenProjectOne,
         description: "The Finca Raiz project look for apartments or houses using search filters. This project was done with Bootstrap, SASS y JS.",
         link: "https://alquilar-fincaraiz.netlify.app",
-        title: "Finca Raíz",
+        title: "Rent a Aparment",
         date: "03/29/2023"
     },
     {
         imagen: ImagenProjectTwo,
-        description: "This project simulate some weekly expenses of one person. You can insert values and a description. Also, it can generate alerts if your money is low.",
-        link: "https://presupuesto-simulate.netlify.app",
-        title: "Simulación",
-        date: "04/18/2023"
+        description: "This project can simulate your finance. You must insert name, cost and category about your bill. It was done with React, Vite and CSS.",
+        link: "https://gastosplanificador.netlify.app/",
+        title: "Finance Simulation",
+        date: "06/25/2023"
     },
     {
         imagen: ImagenProjectThree,
-        description: "This project is a project where you can manage some appointments about sick pets. It was done with React, Vite and TailwindCSSS.",
+        description: "This project is a project where you can manage some appointments about sick pets. It was done with React, Vite and TailwindCSS.",
         link: "https://veterinariapets.netlify.app",
         title: "Pets Appointment",
         date: "06/13/2023"
@@ -38,7 +38,7 @@ const projects = [
         imagen: ImagenProjectFive,
         description: "The form is a project where it validate fields using regular expressions with JavaScript. Besides, this project was done with Bootstrap.",
         link: "https://validatedform.netlify.app/",
-        title: "Formulario",
+        title: "Form Validation",
         date: "03/20/2023"
     },
     {
