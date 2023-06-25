@@ -11,9 +11,6 @@ import imagenReact from '../img/react.svg';
 import imagenNpm from '../img/npm.svg';
 import imagenVite from '../img/vitejs.svg';
 
-document.addEventListener('DOMContentLoaded', {
-    
-})
 const skills = [
     { imagen: imagenBootstrap, nombre: 'Bootstrap' },
     { imagen: imagenTailwind, nombre: 'Tailwind' },
