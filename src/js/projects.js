@@ -5,12 +5,27 @@ import ImagenProjectFour from '../img/pets.webp';
 import ImagenProjectFive from '../img/formulario.webp';
 import ImagenProjectSix from '../img/prestamo.webp';
 
+import imagenBootstrap from '../img/bootstrap.svg';
+import imagenCSS from '../img/css3.svg';
+import imagenGit from '../img/git.svg';
+import imagenGitHub from '../img/github.svg';
+import imagenHTML from '../img/html5.svg';
+import imagenJS from '../img/js.svg';
+import imagenMySQL from '../img/mysql.svg';
+import imagenSass from '../img/sass.svg';
+import imagenTailwind from '../img/tailwind.svg';
+import imagenReact from '../img/react.svg';
+import imagenNpm from '../img/npm.svg';
+import imagenVite from '../img/vitejs.svg';
+
+
 const projects = [
     {
         imagen: ImagenProjectOne,
         description: "The Finca Raiz project look for apartments or houses using search filters. This project was done with Bootstrap, SASS y JS.",
         link: "https://alquilar-fincaraiz.netlify.app",
         title: "Rent a Aparment",
+        tecnologia: {imagenBootstrap, imagenCSS}, 
         date: "03/29/2023"
     },
     {
@@ -84,6 +99,8 @@ function crearHTML() {
         const blockDiv = document.createElement('DIV');
         const titleBlock = document.createElement('P');
         const dateBlock = document.createElement('P');
+        const tecnologiasDiv = document.createElement('DIV');
+        const imgTecnologias = document.createElement('IMG');
 
         projectDiv.classList.add('shadow-black', 'drop-shadow-sm', 'rounded-xl', 'hover:scale-105', 'card');
         descriptionDiv.classList.add('description');
@@ -94,7 +111,7 @@ function crearHTML() {
         imagenDescription.src = `${project.imagen}`;
         contentDescription.classList.add('description-content', 'md:text-xs', 'text-white', 'text-justify', 'font-montserrat');
         contentDescription.textContent = `${project.description}`;
-        linkDescription.classList.add('abrir-proyecto', 'absolute', 'z-0', 'bg-orange-400', 'font-montserrat', 'rounded-lg', 'block', 'px-4', 'py-1', 'text-xs', 'text-white');
+        linkDescription.classList.add('abrir-proyecto', 'absolute', 'z-0', 'font-bold', 'bg-orange-400', 'font-montserrat', 'rounded-lg', 'w-2/3', 'px-4', 'py-2', 'text-xs', 'text-center', 'uppercase', 'text-white');
         linkDescription.href = `${project.link}`;
         linkDescription.target = "_blank";
         linkDescription.textContent = "Open Project";
@@ -109,6 +126,9 @@ function crearHTML() {
         dateBlock.innerHTML = `
             Published on: <span class="text-black">${project.date}</span>
         `;
+        tecnologiasDiv.classList.add('flex');
+       
+        
 
         // Asignando variables a sus padres
         descriptionDiv.appendChild(imagenDescription);
@@ -118,6 +138,7 @@ function crearHTML() {
         blockDiv.appendChild(titleBlock);
         blockDiv.appendChild(dateBlock);
         informationDiv.appendChild(blockDiv);
+        informationDiv.appendChild(tecnologiasDiv);
 
         projectDiv.appendChild(descriptionDiv);
         projectDiv.appendChild(informationDiv);
