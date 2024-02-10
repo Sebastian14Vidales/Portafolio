@@ -1,67 +1,206 @@
-import ImagenProjectOne from '../img/alquiler.webp';
+import ImagenProjectOne from '../img/extras.png';
 import ImagenProjectTwo from '../img/control.webp';
 import ImagenProjectThree from '../img/citasMascotas.webp';
-import ImagenProjectFour from '../img/pets.webp';
+import ImagenProjectFour from '../img/landing.png';
 import ImagenProjectFive from '../img/formulario.webp';
 import ImagenProjectSix from '../img/prestamo.webp';
 
 import imagenBootstrap from '../img/bootstrap.svg';
 import imagenCSS from '../img/css3.svg';
-import imagenGit from '../img/git.svg';
 import imagenGitHub from '../img/github.svg';
-import imagenHTML from '../img/html5.svg';
-import imagenJS from '../img/js.svg';
-import imagenMySQL from '../img/mysql.svg';
-import imagenSass from '../img/sass.svg';
+import imagenJavaScript from '../img/js.svg';
 import imagenTailwind from '../img/tailwind.svg';
+import imagenMongoDB from '../img/mongodb.png';
+import imagenExpress from '../img/express.svg';
+import imagenNodeJS from '../img/nodejs.svg';
 import imagenReact from '../img/react.svg';
-import imagenNpm from '../img/npm.svg';
 import imagenVite from '../img/vitejs.svg';
+import imagenSocket from '../img/socket.svg';
+import imagenTypeScript from '../img/typescript.png';
 
 
 const projects = [
     {
         imagen: ImagenProjectOne,
-        description: "The Finca Raiz project look for apartments or houses using search filters. This project was done with Bootstrap, SASS y JS.",
-        link: "https://alquilar-fincaraiz.netlify.app",
-        title: "Rent a Aparment",
-        tecnologia: {imagenBootstrap, imagenCSS}, 
-        date: "03/29/2023"
+        description: "Horas Extras es un proyecto que simula una pequeña empresa que registra las horas extras de los empleados y calcula su valor.",
+        link: "https://horas-extras-front-roan.vercel.app/",
+        title: "Extras Hours",
+        tecnologia: [
+            {
+                nombre: "TailwindCSS",
+                imagen: imagenTailwind
+            },
+            {
+                nombre: "Socket",
+                imagen: imagenSocket
+            },
+            {
+                nombre: "MongoDB",
+                imagen: imagenMongoDB
+            },
+            {
+                nombre: "Express",
+                imagen: imagenExpress
+            },
+            {
+                nombre: "NodeJS",
+                imagen: imagenNodeJS
+            },
+            {
+                nombre: "React",
+                imagen: imagenReact
+            },
+        ],
+        state: "Finalizado"
     },
     {
         imagen: ImagenProjectTwo,
-        description: "This project can simulate your finance. You must insert name, cost and category about your bill. It was done with React, Vite and CSS.",
+        description: "Este proyecto puede simular tus finanzas. Debes insertar el nombre, el costo y la categoría de tu factura. Fue realizado con React, Vite y CSS.",
         link: "https://gastosplanificador.netlify.app/",
-        title: "Finance Simulation",
-        date: "06/25/2023"
+        title: "Finance App",
+        tecnologia: [
+            {
+                nombre: "Bootstrap",
+                imagen: imagenBootstrap
+            },
+            {
+                nombre: "CSS",
+                imagen: imagenCSS
+            },
+            {
+                nombre: "Vite",
+                imagen: imagenVite
+            },
+            {
+                nombre: "React",
+                imagen: imagenReact
+            },
+            {
+                nombre: "GitHub",
+                imagen: imagenGitHub
+            },
+        ],
+        state: "Finalizado"
     },
     {
         imagen: ImagenProjectThree,
-        description: "This project is a project where you can manage some appointments about sick pets. It was done with React, Vite and TailwindCSS.",
+        description: "Este proyecto es un sistema donde puedes gestionar citas relacionadas con mascotas enfermas. Fue realizado con React, Vite y TailwindCSS.",
         link: "https://veterinariapets.netlify.app",
-        title: "Pets Appointment",
-        date: "06/13/2023"
+        title: "Pets App",
+        tecnologia: [
+            {
+                nombre: "TailwindCSS",
+                imagen: imagenTailwind
+            },
+            {
+                nombre: "CSS",
+                imagen: imagenCSS
+            },
+            {
+                nombre: "Vite",
+                imagen: imagenVite
+            },
+            {
+                nombre: "React",
+                imagen: imagenReact
+            },
+            {
+                nombre: "GitHub",
+                imagen: imagenGitHub
+            },
+        ],
+        state: "Finalizado"
     },
     {
         imagen: ImagenProjectFour,
-        description: "This project allows to create, delete or update information about appointment for your pet. The project was done with HTML, Bootstrap and JavaScript.",
-        link: "https://petsadmin.netlify.app/",
-        title: "Pets Admin",
-        date: "05/10/2023"
+        description: "Este proyecto es una página de aterrizaje para una empresa que busca mostrar su equipo, socios y los servicios que ofrece.",
+        link: "http://nigmauniverse.com",
+        title: "Landing Nigma",
+        tecnologia: [
+            {
+                nombre: "TailwindCSS",
+                imagen: imagenTailwind
+            },
+            {
+                nombre: "CSS",
+                imagen: imagenCSS
+            },
+            {
+                nombre: "Vite",
+                imagen: imagenVite
+            },
+            {
+                nombre: "React",
+                imagen: imagenReact
+            },
+            {
+                nombre: "TypeScript",
+                imagen: imagenTypeScript
+            },
+            {
+                nombre: "GitHub",
+                imagen: imagenGitHub
+            },
+        ],
+        state: "Por terminar"
     },
     {
         imagen: ImagenProjectFive,
-        description: "The form is a project where it validate fields using regular expressions with JavaScript. Besides, this project was done with Bootstrap.",
+        description: "El formulario es un proyecto donde se validan campos utilizando expresiones regulares con JavaScript. Además, este proyecto fue realizado con Bootstrap.",
         link: "https://validatedform.netlify.app/",
         title: "Form Validation",
-        date: "03/20/2023"
+        tecnologia: [
+            {
+                nombre: "Bootstrap",
+                imagen: imagenBootstrap
+            },
+            {
+                nombre: "CSS",
+                imagen: imagenCSS
+            },
+            {
+                nombre: "Vite",
+                imagen: imagenVite
+            },
+            {
+                nombre: "JavaScript",
+                imagen: imagenJavaScript
+            },
+            {
+                nombre: "GitHub",
+                imagen: imagenGitHub
+            },
+        ],
+        state: "Finalizado"
     },
     {
         imagen: ImagenProjectSix,
-        description: "Loan Estimator is a project where you can know about the value of your loan, with interest rates and monthly payments.",
+        description: "Loan Estimator es un proyecto donde puedes conocer el valor de tu préstamo, con tasas de interés y pagos mensuales.",
         link: "https://tuprestamoaqui.netlify.app",
         title: "Loan Estimator",
-        date: "05/23/2023"
+        tecnologia: [
+            {
+                nombre: "TailwindCSS",
+                imagen: imagenTailwind
+            },
+            {
+                nombre: "CSS",
+                imagen: imagenCSS
+            },
+            {
+                nombre: "Vite",
+                imagen: imagenVite
+            },
+            {
+                nombre: "React",
+                imagen: imagenReact
+            },
+            {
+                nombre: "GitHub",
+                imagen: imagenGitHub
+            },
+        ],
+        state: "Finalizado"
     },
 ]
 
@@ -75,17 +214,7 @@ function crearHTML() {
     const tituloHeading = document.createElement('H1');
     const tituloContent = document.createElement('P');
 
-    gridProjects.classList.add('grid', 'gap-4', 'xl:grid-cols-12', 'xl:row-2', 'lg:grid-cols-11', 'lg:grid-rows-2');
-    titulo.classList.add('flex', 'p-4', 'flex-col', 'justify-center', 'text-center', 'md:text-left', 'xl:row-start-1', 'xl:row-end-3', 'lg:col-start-1', 'lg:col-end-4', 'lg:row-start-1', 'lg:row-end-4', 'myCard', 'md:py-6', 'sm:col-start-1', 'sm:col-end-7');
-    tituloHeading.classList.add('text-black', 'font-sans', 'text-2xl', 'lg:text-3xl', 'xl:text-4xl');
-    tituloHeading.innerHTML = `
-        My Recent <br><span>Works &#128170; &#128293; &#127912;</span>
-    `;
-    tituloContent.classList.add('text-sm', 'md:text-lg', 'text-black', 'mt-6');
-    tituloContent.textContent = "I have designed and developed modern web solutions with a professional using lastest trends";
-    titulo.appendChild(tituloHeading);
-    titulo.appendChild(tituloContent);
-    gridProjects.appendChild(titulo);
+    gridProjects.classList.add('mt-8', 'xl:mt-0','xl:px-48','grid', 'gap-4', 'md:grid-cols-2', 'xl:grid-cols-3', 'xl:row-2', 'lg:grid-rows-2');
 
     // Project 1
     projects.forEach((project, index) => {
@@ -99,63 +228,71 @@ function crearHTML() {
         const blockDiv = document.createElement('DIV');
         const titleBlock = document.createElement('P');
         const dateBlock = document.createElement('P');
-        const tecnologiasDiv = document.createElement('DIV');
-        const imgTecnologias = document.createElement('IMG');
+        const tecnologiasUL = document.createElement('ul');
 
-        projectDiv.classList.add('shadow-black', 'drop-shadow-sm', 'rounded-xl', 'hover:scale-105', 'card');
+        projectDiv.classList.add('shadow-black', 'drop-shadow-sm', 'rounded-xl', 'transition-all', 'hover:scale-105', 'card');
         descriptionDiv.classList.add('description');
         imagenDescription.classList.add('card-image');
         imagenDescription.style.width = 100;
         imagenDescription.style.height = 100;
         imagenDescription.alt = `Imagen ${project.title}`;
         imagenDescription.src = `${project.imagen}`;
-        contentDescription.classList.add('description-content', 'md:text-xs', 'text-white', 'text-justify', 'font-montserrat');
+        contentDescription.classList.add('h-[48px]','mt-2','text-oscuro', 'text-xs', 'text-justify', 'font-montserrat');
         contentDescription.textContent = `${project.description}`;
+        contentDescription.id = `contentDescription-${index + 1}`;
         linkDescription.classList.add('abrir-proyecto', 'absolute', 'z-0', 'font-bold', 'bg-orange-400', 'font-montserrat', 'rounded-lg', 'w-2/3', 'px-4', 'py-2', 'text-xs', 'text-center', 'uppercase', 'text-white');
         linkDescription.href = `${project.link}`;
         linkDescription.target = "_blank";
-        linkDescription.textContent = "Open Project";
+        linkDescription.textContent = "Abrir Proyecto";
 
         informationDiv.classList.add('bg-white', 'p-3');
         blockDiv.classList.add('flex', 'justify-between');
         titleBlock.classList.add('card-titulo', 'font-bold', 'text-orange-400');
         titleBlock.innerHTML = `
-            Title: <span class="text-black">${project.title}</span>
+            <span class="text-black text-sm">${project.title}</span>
         `;
         dateBlock.classList.add('card-titulo', 'font-bold', 'text-orange-400');
         dateBlock.innerHTML = `
-            Published on: <span class="text-black">${project.date}</span>
+        <span class="${project.state === 'Finalizado' ? 'text-green-700' : 'text-red-600'}">${project.state}</span>
         `;
-        tecnologiasDiv.classList.add('flex');
-       
-        
+        tecnologiasUL.classList.add('flex', 'h-[61px]', 'flex-wrap', 'items-center', 'gap-2', 'mt-4');
+
+        if (project.tecnologia) {
+            project.tecnologia.forEach((tec) => {
+                const tecnologiaImagen = document.createElement('img');
+                const tecnologiaSpan = document.createElement('span');
+                const li = document.createElement('li');
+
+                tecnologiaImagen.src = `${tec.imagen}`;
+                tecnologiaImagen.classList.add('w-5', 'h-5');
+
+                tecnologiaSpan.textContent = `${tec.nombre}`;
+                tecnologiaSpan.classList.add('text-[10px]', 'ml-1', 'font-mono');
+
+                li.classList.add('flex', 'items-center', 'bg-[#eee]', 'rounded-md', 'px-[0.4rem]', 'py-[0.2rem]')
+
+                li.appendChild(tecnologiaImagen);
+                li.appendChild(tecnologiaSpan);
+                tecnologiasUL.appendChild(li);
+
+            });
+        }
 
         // Asignando variables a sus padres
         descriptionDiv.appendChild(imagenDescription);
-        descriptionDiv.appendChild(contentDescription);
+        // descriptionDiv.appendChild(contentDescription);
         descriptionDiv.appendChild(linkDescription);
 
         blockDiv.appendChild(titleBlock);
         blockDiv.appendChild(dateBlock);
+
         informationDiv.appendChild(blockDiv);
-        informationDiv.appendChild(tecnologiasDiv);
+        informationDiv.appendChild(contentDescription);
+        informationDiv.appendChild(tecnologiasUL);
 
         projectDiv.appendChild(descriptionDiv);
         projectDiv.appendChild(informationDiv);
 
-        if (index === 0) {
-            projectDiv.classList.add('xl:col-span-3', 'lg:col-span-4', 'sm:col-start-7', 'sm:col-end-13');
-        } else if (index === 1) {
-            projectDiv.classList.add('xl:col-start-7', 'xl:col-end-10', 'xl:row-start-1', 'xl:row-end-2', 'lg:col-span-4', 'sm:col-start-7', 'sm:col-end-13', 'sm:row-start-3', 'sm:row-end-4');
-        } else if (index === 2) {
-            projectDiv.classList.add('xl:col-start-10', 'xl:col-end-13', 'xl:row-start-1', 'xl:row-end-2', 'lg:col-span-4', 'sm:col-start-1', 'sm:col-end-13', 'sm:row-start-2', 'sm:row-end-3');
-        } else if (index === 3) {
-            projectDiv.classList.add('xl:col-start-4', 'xl:col-end-7', 'xl:row-start-2', 'xl:row-end-3', 'lg:col-span-4', 'sm:col-start-1', 'sm:col-end-7', 'sm:row-start-3', 'sm:row-end-4');
-        } else if (index === 4) {
-            projectDiv.classList.add('xl:col-start-7', 'xl:col-end-10', 'xl:row-start-2', 'xl:row-end-3', 'lg:col-span-4', 'sm:col-start-1', 'sm:col-end-7');
-        } else {
-            projectDiv.classList.add('xl:col-start-10', 'xl:col-end-13', 'xl:row-start-2', 'xl:row-end-3', 'lg:col-span-4', 'sm:col-start-7', 'sm:col-end-13');
-        }
 
         gridProjects.appendChild(projectDiv);
     });

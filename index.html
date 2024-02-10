@@ -13,20 +13,39 @@
     <section class="bg-principal px-5 container  md:px-10 sm:px-10 pb-12 xl:pb-5 mx-auto shadow-lg" id="home">
       <header class="header container mx-auto">
         <div class="flex justify-between items-center py-10">
-          <a href="index.html" class=" text-3xl text-black hover:text-orange-400 decoration-transparent cursor-pointer font-bold font-serif">Sebastian</a>
-          <nav class="lg:flex hidden font-bold uppercase">
-            <a href="#home" class="me-4 menu decoration-transparent">Home</a>
-            <a href="#about" class="me-4 menu decoration-transparent">About me</a>
-            <a href="#projects" class="me-4 menu decoration-transparent">Projects</a>
-            <a href="#testimonials" class="me-4 menu decoration-transparent">Testimonials</a>
-            <a href="#contact" class="menu decoration-transparent">Contact me</a>
-          </nav>
-          <a href="src/assets/SebastianVidalesCV.pdf" target="_blank" download="Sebastian Vidales CV" class="download cursor-pointer bg-green-300 hover:bg-green-500 ease-in duration-200 py-2 px-3 rounded-lg font-bold text-black hover:text-white hidden lg:flex"> Download CV</a>
-          <div class="flex flex-col justify-end lg:hidden">
-            <a href="#" class="cursor-pointer menu-open-btn hover:rotate-180 transition-transform">
-              <img src="src/img/menu.svg" width="100%" height="100%" alt="Abrir Menu">
-            </a>
+          <div class="flex">
+            <img src="src/img/icono.png" alt="S">
+            <a href="index.html" class="text-3xl text-black decoration-transparent cursor-pointer font-bold font-serif">ebastian</a>
           </div>
+          <nav class="lg:flex hidden font-bold uppercase">
+            <a id="inicio" href="#home" class="me-4 menu decoration-transparent">Home</a>
+            <a id="acerca" href="#about" class="me-4 menu decoration-transparent">About me</a>
+            <a id="proyectos" href="#projects" class="me-4 menu decoration-transparent">Projects</a>
+            <a id="testimoniales" href="#testimonials" class="me-4 menu decoration-transparent">Testimonials</a>
+            <a id="contactame" href="#contact" class="menu decoration-transparent">Contact me</a>
+          </nav>
+          <div class="flex">
+            <a id="languageButton" class="cursor-pointer language-button flex items-center mr-6">
+              <span id="iconoIdioma">
+                <img src="src/img/espana.png" alt="" class="w-6">
+              </span>
+              <span id="currentLanguage" class="font-bold">ES</span>
+            </a>
+            <a id="pdfOne" href="src/assets/SebastianVidalesClarosCV.pdf" target="_blank" download="Sebastian Vidales CV" class="box-border download hidden lg:flex relative z-30 items-center justify-center w-auto px-4 py-3 overflow-hidden font-bold text-white transition-all duration-300 bg-green-700 rounded-full cursor-pointer group ring-offset-2 ring-1 ring-green-300 ring-offset-indigo-200 hover:ring-offset-green-700 ease focus:outline-none">
+              <span class="absolute bottom-0 right-0 w-8 h-20 -mb-8 -mr-5 transition-all duration-300 ease-out transform rotate-45 translate-x-1 bg-white opacity-10 group-hover:translate-x-0"></span>
+              <span class="absolute top-0 left-0 w-20 h-8 -mt-1 -ml-12 transition-all duration-300 ease-out transform -rotate-45 -translate-x-1 bg-white opacity-10 group-hover:translate-x-0"></span>
+              <span id="descargar" class="relative z-20 flex items-center text-sm">
+              <svg class="relative w-5 h-5 mr-2 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+              Download CV
+              </span>
+            </a>
+            <div class="flex flex-col justify-end lg:hidden">
+              <a href="#" class="cursor-pointer menu-open-btn hover:rotate-180 transition-transform">
+                <img src="src/img/menu.svg" width="100%" height="100%" alt="Abrir Menu">
+              </a>
+            </div>
+          </div>
+          
         </div>
       </header> 
 
@@ -48,13 +67,12 @@
 
       <div class="grid lg:p-20 xl:p-36 grid-rows-2 sm:grid-rows-none sm:grid-cols-2">
         <div class="texto-inicial mt-2 sm:mt-0 flex flex-col justify-center">
-          <p class="contenido relative mb-3 text-orange-400 font-bold">Hello, I am <br><span class="text-black text-2xl md:text-4xl uppercase">Sebastian Vidales</span></p>
-          <h1><span class="mb-6 text-green-300 text-2xl font-bold typed"></span></h1>  
-          <p class="mt-3">Passionate Systems Engineer and Front-End Web Developer from Florencia, Colombia, with experience in creating Web applications with React | JavaScript | HTML | CSS3 and some other libraries and CSS frameworks. I am currently learning English.</p>
+          <p class="font-bold"><span id="hello" class="contenido relative mb-3 text-orange-400">Hello, I am </span> <br><span class="text-black text-2xl md:text-4xl uppercase">Sebastian Vidales</span></p>
+          <h1><span id="type" class="mb-6 text-green-700 text-2xl font-bold typed1"></span></h1>  
+          <p id="descripcion" class="font-montserrat mt-3">Passionate Systems Engineer and Front-End Web Developer from Florencia, Colombia, with experience in creating Web applications with React | JavaScript | HTML | CSS3 and some other libraries and CSS frameworks. I am currently learning English.</p>
 
-          <div class="mt-10 flex items-center">
-            <a href="#hireme" class="text-white font-bold bg-orange-400 hover:bg-orange-600 ease-in duration-200 px-5 lg:px-10 py-3 rounded-lg">Hire me</a>
-            <a href="src/assets/SebastianVidalesCV.pdf" target="_blank" download="Sebastian Vidales CV" class="download2 px-5 lg:px-10">Download CV 
+          <div class="mt-10 flex gap-6 items-center">
+            <a id="descargarDos" href="src/assets/SebastianVidalesCV.pdf" target="_blank" download="Sebastian Vidales CV" class="download2 flex font-bold bg-orange-400 hover:bg-orange-600 ease-in duration-200 px-5 lg:px-10 py-3 rounded-lg">Download CV
               <span class="inline-flex items-center ml-2">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="orange-400" class="fill-black w-5 h-5">
                   <path d="M10.75 2.75a.75.75 0 00-1.5 0v8.614L6.295 8.235a.75.75 0 10-1.09 1.03l4.25 4.5a.75.75 0 001.09 0l4.25-4.5a.75.75 0 00-1.09-1.03l-2.955 3.129V2.75z" />
@@ -62,6 +80,11 @@
                 </svg>
               </span>
             </a>
+            <div class="flex mb-2 sm:mb-0 sm:order-1">
+              <a target="_blank" href="https://github.com/Sebastian14Vidales"><img class="w-10" height="100%" src="src/img/github.svg" alt="github"></a>
+              <a target="_blank" href="https://www.linkedin.com/in/sebastianvidales"><img class="w-10" height="100%"  src="src/img/linkedin.svg" alt="linkedin"></a>
+              <a target="_blank" href="tel:+573103267273"><img class="w-10" height="100%"  src="src/img/phone.svg" alt="linkedin"></a>
+            </div>
           </div>
         </div>
         <div class="flex relative flex-col sm:flex-row justify-center items-center row-start-1 sm:col-start-2">
@@ -71,24 +94,24 @@
     </section>
     <section id="about" class="bg-oscuro p-10 container lg:px-36 mx-auto">
       <div class="text-center text-white">
-        <h1 class="titulo-seccion inline-block after:bg-orange-400 text-center text-white font-bold mb-12 text-4xl">About Me</h1>
+        <h1 id="aboutMeTitle" class="titulo-seccion inline-block after:bg-orange-400 text-center text-white font-bold mb-12 text-4xl">About Me</h1>
         <div class="grid sm:flex sm:flex-col row-start-1 row-end-2">
           <div class="grid sm:grid-cols-2 gap-6 sm:mb-10">
             <div class="animacion-whyme text-left mb-8">
-              <h1 id="hireme" class="text-3xl titulo-seccion after:bg-indigo-500">Why me?<span>&#9995;</span></h1>
-              <p class="text-justify mt-4 md:text-xl">I am a Front-End Developer with +1 year of experience in technologies and software tools. I studied at the University of Amazonia and I am a Systems Engineer. My professional and personal background allows me to have the ability to solve problems and adapt to any work environment. I love to learn and be better every day in what I do. Therefore, I would be the best coworker for your team or organization, so do not hesitate to get to know me and contact me.</p>
+              <h1 id="whyMeTitle" class="text-3xl titulo-seccion  after:bg-indigo-500">¿Por qué yo?<span>&#9995;</span></h1>
+              <p id="descripcionPorqueYo" class="font-montserrat text-justify mt-4 md:text-xl">I am a Front-End Developer with +1 year of experience in technologies and software tools. I studied at the University of Amazonia and I am a Systems Engineer. My professional and personal background allows me to have the ability to solve problems and adapt to any work environment. I love to learn and be better every day in what I do. Therefore, I would be the best coworker for your team or organization, so do not hesitate to get to know me and contact me.</p>
               
             </div>
             <div class="animacion-skills overflow-hidden text-left">
-              <h1 class="text-3xl titulo-seccion after:bg-green-700">Skills<span>&#127942;</span></h1>
-              <ul class="habilidades gap-2 grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 mt-4">
+              <h1 id="habilidades" class="text-3xl titulo-seccion after:bg-green-700">Skills<span>&#127942;</span></h1>
+              <ul class="habilidades gap-2 grid grid-cols-3 xl:grid-cols-5 mt-4">
               </ul>
             </div>
           </div>
 
           <div class="text-left sm:text-center my-12 sm:my-0">
-            <h1 class="animacion-educacion-left overflow-hidden text-3xl titulo-seccion after:bg-orange-600 mb-6">Education<span>&#127891;</span></h1>
-            <div class="curso grid sm:grid-cols-2 gap-4">
+            <h1 id="educacion" class="animacion-educacion-left overflow-hidden text-3xl titulo-seccion after:bg-orange-600 mb-6">Education<span>&#127891;</span></h1>
+            <div class="curso grid sm:grid-cols-2 xl:grid-cols-3 gap-4">
             </div>
           </div>
         </div>
@@ -97,13 +120,13 @@
     </section>
     <main id="projects" class="p-4 container pt-16 lg:pt-20 lg:pb-10 px-10  mx-auto bg-principal shadow-lg">
       <div class="text-center">
-        <h1 class="titulo-seccion inline-block after:bg-green-300 text-center text-black font-bold mb-6 md:mb-12 text-4xl">My Projects</h1>
+        <h1 id="MisProyectos" class="titulo-seccion inline-block after:bg-green-300 text-center text-black font-bold mb-6 md:mb-12 text-4xl">My Projects</h1>
       </div>
     </main>
 
     <section id="testimonials" class="bg-oscuro p-10 lg:px-36 container mx-auto">
       <div class="text-center">
-        <h1 class="titulo-seccion inline-block after:bg-orange-400 text-center text-white font-bold text-4xl">Testimonials</h1>
+        <h1 id="testimonios" class="titulo-seccion inline-block after:bg-orange-400 text-center text-white font-bold text-4xl">Testimonials</h1>
       </div>
       
       <div class="swiper w-full h-full text-white mySwiper">
@@ -118,29 +141,29 @@
 
     <section id="contact" class="bg-principal p-10 container mx-auto">
       <div class="text-center">
-        <h1 class="titulo-seccion inline-block after:bg-green-300 text-center text-black font-bold mb-12 text-4xl">Contact Me</h1>
+        <h1 id="contacto" class="titulo-seccion inline-block after:bg-green-300 text-center text-black font-bold mb-12 text-4xl">Contact Me</h1>
       </div>
       <div class="flex justify-center">
         <form id="contact-form" class="w-full max-w-lg" action="https://formsubmit.co/a84959d7a15dc8b6ceeaa091852b10c5" method="POST">
           <div class="mb-4">
-            <label class="block text-gray-700 font-bold mb-2" for="name">Name</label>
+            <label id="nameForm" class="block text-gray-700 font-bold mb-2" for="name">Nombre</label>
             <input class="shadow appearance-none rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-              id="name" type="text" name="name" placeholder="Your Name">
+              id="name" type="text" name="name">
           </div>
           <div class="mb-4">
-            <label class="block text-gray-700 font-bold mb-2" for="subject">Subject</label>
+            <label id="subjectForm" class="block text-gray-700 font-bold mb-2" for="subject">Asunto</label>
             <input class="shadow appearance-none rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-              id="subject" type="text" name="subject" placeholder="Subject">
+              id="subject" type="text" name="subject">
           </div>
           <div class="mb-4">
-            <label class="block text-gray-700 font-bold mb-2" for="email">Email Address</label>
+            <label id="emailForm" class="block text-gray-700 font-bold mb-2" for="email">Correo Electrónico</label>
             <input class="shadow appearance-none rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-              id="email" type="email" name="email" placeholder="example@example.com">
+              id="email" type="email" name="email">
           </div>
           <div class="mb-4">
-            <label class="block text-gray-700 font-bold mb-2" for="message">Message</label>
+            <label id="messageForm" class="block text-gray-700 font-bold mb-2" for="message">Mensaje</label>
             <textarea class="shadow appearance-none rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-              id="message" name="message" rows="5" placeholder="Write your message here"></textarea>
+              id="message" name="message" rows="5" ></textarea>
           </div>
           <div id="spinner" class="hidden justify-center mb-4">
             <svg  aria-hidden="true" class=" w-8 h-8 mr-2 text-footer animate-spin dark:text-gray-600 fill-indigo-500" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -150,8 +173,8 @@
           </div>
          
           <div class="sm:flex items-center justify-center">
-            <button id="boton-submit" class="bg-green-300 block w-full sm:inline-block sm:w-auto text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" 
-              type="submit" disabled>Send  
+            <button id="botonsubmit" class="bg-green-300 block w-full sm:inline-block sm:w-auto text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" 
+              type="submit" disabled>Enviar  
               <svg class="inline-block h-4 w-4 text-white"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  
                 <path stroke="none" d="M0 0h24v24H0z"/>  
                 <line x1="10" y1="14" x2="21" y2="3" />  
@@ -177,7 +200,7 @@
           <p class="text-gray-600 text-sm font-bold">Copyright © <span class="fecha"></span> - Sebastian Vidales Claros </p>
           <div class="flex mb-2 sm:mb-0 -order-1 sm:order-1">
             <a target="_blank" href="https://github.com/Sebastian14Vidales"><img class="w-10" height="100%" src="src/img/github.svg" alt="github"></a>
-            <a target="_blank" href="https://www.linkedin.com/in/sebastian-vidales-claros-063b53181/"><img class="w-10" height="100%"  src="src/img/linkedin.svg" alt="linkedin"></a>
+            <a target="_blank" href="https://www.linkedin.com/in/sebastianvidales"><img class="w-10" height="100%"  src="src/img/linkedin.svg" alt="linkedin"></a>
           </div>
         </div>
       </div>

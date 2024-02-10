@@ -12,6 +12,7 @@ import './js/skills.js';
 import './js/downloadPdf.js';
 import './js/scrollreveal.js';
 import './js/projects.js'
+import './js/language.js'
 
 const fechaSpan = document.querySelector('.fecha');
 let fecha = new Date();

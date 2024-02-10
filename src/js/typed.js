@@ -1,10 +1,12 @@
-const typed = new Typed('.typed', {
+  // Tu código aquí
+  const typed1 = new Typed('.typed1', {
     strings: [
-      '<span class="">FrontEnd Developer</span>',
-      '<span class="">Systems Engineer</span>',
-      '<span class="">Software Developer</span>',
+      '<span id="title1">Desarrollador Front-End</span>',
+      '<span id="title2">Ingeniero de Sistemas</span>',
+      '<span id="title3">Desarrollador de Software</span>',
     ],
     typeSpeed: 100,
     backSpeed: 40,
     loop: true
   });
+

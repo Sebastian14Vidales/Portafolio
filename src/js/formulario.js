@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const inputCorreo = document.querySelector('#email');
     const inputMensaje = document.querySelector('#message');
   
-    const btnEnviar = document.querySelector('#boton-submit');
+    const btnEnviar = document.querySelector('#botonsubmit');
       
     const spinner = document.querySelector('#spinner');
   

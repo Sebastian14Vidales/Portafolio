@@ -26,7 +26,7 @@ const testimoniales = [
 
 
 const swiperWrapper = document.querySelector('.swiper-wrapper');
-testimoniales.forEach( testimonio => {
+testimoniales.forEach( (testimonio, index) => {
 
     const swiperSlider = document.createElement('DIV');
     swiperSlider.classList.add('swiper-slide', 'text-center', 'text-lg', 'flex', 'justify-center', 'items-center');
@@ -39,8 +39,10 @@ testimoniales.forEach( testimonio => {
 
     const blockquote = document.createElement('blockquote');
     const testi = document.createElement('P');
+    testi.id = `testimonio-${index + 1}`;
     testi.textContent = `${testimonio.testimonio}`
-    testi.classList.add('text-sm', 'sm:text-2xl', 'font-medium', 'text-gray-900', 'dark:text-white');
+    testi.classList.add('text-sm', 'sm:text-2xl', 'font-montserrat', 'text-gray-900', 'dark:text-white');
+    
 
     const figcaption = document.createElement('figcaption');
     figcaption.classList.add('flex', 'items-center', 'justify-center', 'mt-6', 'space-x-3');

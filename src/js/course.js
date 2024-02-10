@@ -2,42 +2,42 @@ const cursos = [
     {
         imagen: 'hover:after:bg-birrete',
         titulo: 'Ingeniería de Sistemas',
-        fecha: 'February-2012 - September-2019',
-        contenido: 'I did my college career at University of Amazonia where I acquired values and fundamental knowledge about systems building in our environment.'
+        fecha: 'Febrero-2012 - Septiembre-2019',
+        contenido: 'Realicé mi carrera universitaria en la Universidad de la Amazonia, donde adquirí valores y conocimientos fundamentales sobre la construcción de sistemas en nuestro entorno.'
     },
     {
         imagen: 'hover:after:bg-html',
         titulo: 'Curso Desarrollo Web Completo con HTML5, CSS3, JS AJAX PHP y MySQL',
-        fecha: 'May-2022 - October-2022',
-        contenido: 'In this course I learned to create projects with HTML, CSS and JavaScript. Also, I learned about MySQL and a little PHP. My dream to be software developer started here.'
+        fecha: 'Mayo-2022 - Octubre-2022',
+        contenido: 'En este curso aprendí a crear proyectos con HTML, CSS y JavaScript. Además, aprendí sobre MySQL y un poco de PHP. Mi sueño de ser desarrollador de software comenzó aquí.'
     },
     {
         imagen: 'hover:after:bg-css',
         titulo: 'Curso CSS La Guía Completa - Flexbox, CSS Grid, SASS',
-        fecha: 'November-2022 - February-2023',
-        contenido: 'In this course learned to dominate CSS, SASS, Grid, Flexbox, BEM, Gulp and mobile first. I performed projects about designs web responsive.'
+        fecha: 'Noviembre-2022 - Febrero-2023',
+        contenido: 'En este curso aprendí a dominar CSS, SASS, Grid, Flexbox, BEM, Gulp y el enfoque mobile first. Realicé proyectos sobre diseño web responsivo.'
     },
     {
         imagen: 'hover:after:bg-bootstrap',
         titulo: 'Curso Bootstrap 5 y SASS - La Guía Completa',
-        fecha: 'February-2023 - March-2023',
-        contenido: 'The Bootstrap course I learned about main fundamentals of a frameworkCSS. I did responsive projects using CSS classes.'
+        fecha: 'Febrero-2023 - Marzo-2023',
+        contenido: 'En el curso de Bootstrap aprendí sobre los fundamentos principales de un framework CSS. Realicé proyectos responsivos utilizando clases de CSS.'
     },
     {
         imagen: 'hover:after:bg-js',
         titulo: 'Curso JavaScript Moderno - La Guía Definitiva',
-        fecha: 'March-2023 - May-2023',
-        contenido: 'I did the JavaScript course. However, I learned topics such as REST APIS, Asyn/Await, POO, Promises, Arrow Functions, among others.'
+        fecha: 'Marzo-2023 - Mayo-2023',
+        contenido: 'Realicé el curso de JavaScript. Sin embargo, aprendí temas como REST APIs, Asyn/Await, POO, Promises, Arrow Functions, entre otros.'
     },
     {
         imagen: 'hover:after:bg-react',
         titulo: 'Curso React - La Guía Completa: Hooks Context Redux MERN',
-        fecha: 'May-2023 - Currently',
-        contenido: 'Currently I am doing the React course. In this moment, I am learning to use Hooks, Next.js, Redux, Vite and TailwindCSS.'
+        fecha: 'Mayo-2023 - Actualmente',
+        contenido: 'Actualmente estoy realizando el curso de React. En este momento, estoy aprendiendo a utilizar Hooks, Next.js, Redux, Vite y TailwindCSS.'
     },
 ];
 
-cursos.forEach(curso => {
+cursos.forEach((curso, index) => {
     const skills = document.querySelector('.curso');
 
     const div = document.createElement('DIV');
@@ -48,9 +48,11 @@ cursos.forEach(curso => {
     const date = document.createElement('P');
     date.classList.add('text-xs', 'font-mono', 'text-fecha');
     date.textContent = `${curso.fecha}`;
+    date.id = `date-${index + 1}`;
     const content = document.createElement('P');
-    content.classList.add('mt-2', 'text-xs', 'sm:text-base');
+    content.classList.add('mt-2', 'font-montserrat' , 'text-xs', 'sm:text-base');
     content.textContent = `${curso.contenido}`;
+    content.id = `course-${index + 1}`;
 
     if(curso.imagen.includes('hover:after:bg-birrete') || curso.imagen.includes('hover:after:bg-css') || curso.imagen.includes('hover:after:bg-js')) {
         div.classList.add('animacion-educacion-left');
