@@ -1,6 +1,7 @@
 import imagenYilver from '../img/yilver.webp'
 import imagenJulian from '../img/julian.webp'
 import imagenNatalia from '../img/natalia.webp'
+import imagenLinkedIn from '../img/linkedin.svg'
 
 const testimoniales = [
     {
@@ -76,4 +77,26 @@ testimoniales.forEach( (testimonio, index) => {
 
     swiperWrapper.appendChild(swiperSlider);
 });
+const testimonials = document.getElementById('testimonials')
+console.log(testimonials);
+const divLinkTestimonials = document.createElement('div');
+const linkTestimonials = document.createElement('a');
+const linkTestimonialsImage = document.createElement('IMG');
+const linkTestimonialsParagraph = document.createElement('p');
+
+linkTestimonialsImage.src = `${imagenLinkedIn}`;
+linkTestimonialsImage.classList.add('w-5', 'h-5')
+linkTestimonialsParagraph.textContent = 'Ver testiominales en LinkedIn'
+linkTestimonialsParagraph.classList.add('text-white', 'text-xs', 'md:text-sm', 'font-montserrat' , 'hover:text-orange-400', 'transition-all')
+linkTestimonialsParagraph.id = 'paragraph';
+linkTestimonials.classList.add('flex', 'gap-2', 'justify-end', 'items-center', 'cursor-pointer')
+linkTestimonials.target = '_blank';
+linkTestimonials.href = 'https://www.linkedin.com/in/sebastianvidales/details/recommendations/'
+linkTestimonials.appendChild(linkTestimonialsImage)
+linkTestimonials.appendChild(linkTestimonialsParagraph)
+divLinkTestimonials.classList.add('flex', 'justify-center', 'md:justify-end', 'mt-6')
+divLinkTestimonials.appendChild(linkTestimonials)
+testimonials.appendChild(divLinkTestimonials)
+console.log(divLinkTestimonials);
+
 

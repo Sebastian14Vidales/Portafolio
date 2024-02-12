@@ -210,9 +210,6 @@ function crearHTML() {
     const recentProjects = document.querySelector('#projects');
 
     const gridProjects = document.createElement('DIV');
-    const titulo = document.createElement('DIV');
-    const tituloHeading = document.createElement('H1');
-    const tituloContent = document.createElement('P');
 
     gridProjects.classList.add('mt-8', 'xl:mt-0','xl:px-48','grid', 'gap-4', 'md:grid-cols-2', 'xl:grid-cols-3', 'xl:row-2', 'lg:grid-rows-2');
 

@@ -10,3 +10,4 @@
     loop: true
   });
 
+export default typed1
