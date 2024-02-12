@@ -252,7 +252,7 @@ function crearHTML() {
         dateBlock.innerHTML = `
         <span class="${project.state === 'Finalizado' ? 'text-green-700' : 'text-red-600'}">${project.state}</span>
         `;
-        tecnologiasUL.classList.add('flex', 'h-[61px]', 'flex-wrap', 'items-center', 'gap-2', 'mt-4');
+        tecnologiasUL.classList.add('flex', 'h-[61px]', 'flex-wrap', 'items-center', 'gap-2', 'mt-6');
 
         if (project.tecnologia) {
             project.tecnologia.forEach((tec) => {
